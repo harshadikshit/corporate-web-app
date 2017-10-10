@@ -1,6 +1,5 @@
 node {
-    stage 'Checkout'
+    stage 'Checkout' { checkout scm }
 
-    checkout scm
-
-}    
+	stage('compile') { withMaven(maven: 'Maven-3-5-0') { sh "mvn clean install" } }   
+}
