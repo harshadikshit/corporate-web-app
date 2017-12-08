@@ -1,258 +1,146 @@
-/*!
- * Start Bootstrap - Grayscale v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
- */
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    font-family: Lora, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background-color: #000
-}
-html {
-    width: 100%;
-    height: 100%
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    margin: 0 0 35px;
-    letter-spacing: 1px;
-}
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 0 25px
-}
-@media (min-width: 768px) {
-    p {
-        font-size: 18px;
-        line-height: 1.6;
-        margin: 0 0 35px
-    }
-}
-a {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    color: #42dca3
-}
-a:focus,
-a:hover {
-    text-decoration: none;
-    color: #1d9b6c
-}
-#mainNav {
-    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-bottom: 0;
-    ;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
-    background-color: #000
-}
-#mainNav .navbar-toggler {
-    font-size: 14px;
-    padding: 11px;
-    color: #fff;
-    border: 1px solid #fff
-}
-#mainNav .navbar-brand {
-    font-weight: 700
-}
-#mainNav a {
-    color: #fff
-}
-#mainNav .navbar-nav .nav-item {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out
-}
-#mainNav .navbar-nav .nav-item:hover {
-    color: fade(white, 80%);
-    outline: 0;
-    background-color: transparent
-}
-#mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
-    outline: 0;
-    background-color: transparent
-}
-@media (min-width: 992px) {
-    #mainNav {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        -webkit-transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
-        -moz-transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
-        transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
-        letter-spacing: 1px;
-        border-bottom: none;
-        background: 0 0
-    }
-    #mainNav.navbar-shrink {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-        background: #000
-    }
-    #mainNav .nav-link.active {
-        outline: 0;
-        background-color: rgba(255, 255, 255, .3)
-    }
-    #mainNav .nav-link.active:hover {
-        color: #fff
-    }
-}
-.masthead {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 200px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg4.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
-.masthead .intro-body {
-    display: table-cell;
-    vertical-align: middle
-}
-.masthead .intro-body .brand-heading {
-    font-size: 50px
-}
-.masthead .intro-body .intro-text {
-    font-size: 18px
-}
-@media (min-width: 768px) {
-    .masthead {
-        height: 100%;
-        padding: 0
-    }
-    .masthead .intro-body .brand-heading {
-        font-size: 100px
-    }
-    .masthead .intro-body .intro-text {
-        font-size: 22px
-    }
-}
-.btn-circle {
-    font-size: 26px;
-    width: 55px;
-    height: 55px;
-    margin-top: 15px;
-    line-height: 45px;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 100%!important;
-    background: 0 0
-}
-.btn-circle:focus,
-.btn-circle:hover {
-    color: #fff;
-    outline: 0;
-    background: rgba(255, 255, 255, .1)
-}
-.content-section {
-    padding-top: 150px;
-    padding-bottom: 150px
-}
-.download-section {
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
-#map {
-    width: 100%;
-    height: 300px
-}
-@media (min-width: 992px) {
-    .content-section {
-        padding-top: 200px;
-        padding-bottom: 200px
-    }
-    #map {
-        height: 350px
-    }
-}
-.btn {
-    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    ;
-    border-radius: 0
-}
-.btn-default {
-    color: #42dca3;
-    border: 1px solid #42dca3;
-    background-color: transparent
-}
-.btn-default:focus,
-.btn-default:hover {
-    color: #000;
-    border: 1px solid #42dca3;
-    outline: 0;
-    background-color: #42dca3
-}
-ul.banner-social-buttons {
-    margin-top: 0
-}
-@media (max-width: 1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px
-    }
-}
-@media (max-width: 767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0
-    }
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0
-    }
-}
-footer {
-    padding: 50px 0
-}
-footer p {
-    font-size: 14px;
-    margin: 0
-}
-::-moz-selection {
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, .2);
-    text-shadow: none
-}
-::selection {
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, .2);
-    text-shadow: none
-}
-img::selection {
-    background: 0 0
-}
-img::-moz-selection {
-    background: 0 0
-}
-body {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, .2)
-}
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ValueBlock</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">What</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Who</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">When</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+			<!--
+              <h1 class="brand-heading">Value Block</h1>
+	
+              <h2>Electronic Markets For The Block Chain
+                <br>Find out what your worth</h2>
+              -->
+			  <img src="img/ValueBlock_logo_white.png" width="340px" />
+			  <br/>
+			  <br/>
+			  <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1>What is Value Block</h1>
+            <h4>Real Time Electronic Swap Markets On The Block Chain</h4>
+            <video autoplay loop>
+			  <source src="img/video1.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+			<br/>
+			<p/>
+			<h5>People and Firms exchange value using our <b>CryptoBlocks</b> currency</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Who are Value Block</h2>
+
+          <h3>We are seasoned professionals drawn from the Technology, Capital Markets and Advertising industries	</h3>
+          <br/><br/>
+		  <h4>We are in stealth mode but here are the firms we've come from	</h4>
+          <br/><br/>
+		  <img src="img/team_bg.jpg"></img>	
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">     
+        <div class="row">
+		<h2>When is ValueBlock</h2>
+		<img src="img/timeline.jpg"></img>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Value Block Inc</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+</html>
